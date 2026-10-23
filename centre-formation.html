@@ -113,7 +113,11 @@
 
   <!-- Gadus NIYONZIMA - Ajout : page Centre de formation professionnelle + fablab -->
   <style>
+    /* Gadus NIYONZIMA - Ancien fond du hero, conservé pour mémoire :
     .cf-hero { padding: 140px 0 70px; background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("assets/img/hero-bg.jpg") center/cover no-repeat; color: #fff; text-align: center; }
+    */
+    /* Gadus NIYONZIMA - Nouveau fond du hero : photo fablab (impression 3D + électronique) */
+    .cf-hero { padding: 140px 0 70px; background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("assets/img/centre-formation/cf-hero.jpg") center 30%/cover no-repeat; color: #fff; text-align: center; }
     .cf-hero h1 { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 40px; margin-bottom: 14px; }
     .cf-hero p { max-width: 760px; margin: 0 auto 26px; font-size: 18px; }
     .cf-hero .btn-cf { display: inline-block; padding: 10px 28px; border-radius: 50px; background: #5fcf80; color: #fff; font-weight: 600; margin: 4px; }
@@ -131,6 +135,10 @@
     .cf-cta { background: #5fcf80; color: #fff; text-align: center; padding: 60px 0; }
     .cf-cta h3 { font-family: "Poppins", sans-serif; font-weight: 700; }
     .cf-cta a { display: inline-block; margin: 8px; padding: 10px 28px; border-radius: 50px; background: #fff; color: #37517e; font-weight: 600; }
+    /* Gadus NIYONZIMA - Ajout : images des sections du centre de formation */
+    .cf-img { width: 100%; height: 190px; object-fit: cover; border-radius: 6px; margin-bottom: 16px; }
+    .cf-img-lg { width: 100%; height: 320px; object-fit: cover; border-radius: 6px; margin-bottom: 20px; }
+    .cf-gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 6px; }
     @media (max-width: 768px) { .cf-hero h1 { font-size: 28px; } .cf-hero { padding-top: 110px; } }
   </style>
 
@@ -156,7 +164,11 @@
         </div>
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <!-- Gadus NIYONZIMA - Ancienne image, conservée :
             <img src="assets/img/about.jpg" class="img-fluid" alt="Étudiants en atelier">
+            -->
+            <!-- Gadus NIYONZIMA - Nouvelle image : apprenants sur postes informatiques -->
+            <img src="assets/img/centre-formation/cf-presentation.jpg" class="img-fluid rounded" alt="Apprenants travaillant sur des postes informatiques">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>Un centre ouvert à tous ceux qui veulent un métier technique</h3>
@@ -184,6 +196,8 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6">
             <div class="cf-card">
+              <!-- Gadus NIYONZIMA - Ajout : photo de la filière -->
+              <img src="assets/img/centre-formation/cf-embarque.jpg" class="cf-img" alt="Carte de prototypage électronique sur banc d'essai" loading="lazy">
               <span class="cf-tag">Filière pilote</span><br>
               <i class="bi bi-cpu"></i>
               <h4>Systèmes embarqués &amp; IoT</h4>
@@ -196,6 +210,8 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="cf-card">
+              <!-- Gadus NIYONZIMA - Ajout : photo de la filière -->
+              <img src="assets/img/centre-formation/cf-impression3d.jpg" class="cf-img" alt="Imprimante 3D et modèle CAO sur tablette" loading="lazy">
               <span class="cf-tag">Filière pilote</span><br>
               <i class="bi bi-box"></i>
               <h4>Impression 3D &amp; fabrication numérique</h4>
@@ -208,6 +224,8 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="cf-card">
+              <!-- Gadus NIYONZIMA - Ajout : photo de la filière -->
+              <img src="assets/img/centre-formation/cf-solaire.jpg" class="cf-img" style="object-position: center 40%;" alt="Câblage d'une installation photovoltaïque sur un toit" loading="lazy">
               <span class="cf-tag">Filière pilote</span><br>
               <i class="bi bi-sun"></i>
               <h4>Énergie solaire</h4>
@@ -260,6 +278,8 @@
             </div>
           </div>
           <div class="col-lg-6">
+            <!-- Gadus NIYONZIMA - Ajout : photo d'un cours encadré -->
+            <img src="assets/img/centre-formation/cf-cours-en-ligne.jpg" class="cf-img-lg" style="object-position: center 35%;" alt="Formateur encadrant un groupe d'apprenants" loading="lazy">
             <div class="cf-card">
               <i class="bi bi-award"></i>
               <h4>Ce que l'apprenant obtient</h4>
@@ -287,6 +307,13 @@
           <div class="col-lg-3 col-md-6"><div class="cf-card text-center"><i class="bi bi-motherboard"></i><h4>Électronique</h4><p>Postes de soudage, instruments de mesure et cartes de développement.</p></div></div>
           <div class="col-lg-3 col-md-6"><div class="cf-card text-center"><i class="bi bi-lightning-charge"></i><h4>Énergie</h4><p>Bancs d'essai solaires pour l'apprentissage et l'autonomie du laboratoire.</p></div></div>
           <div class="col-lg-3 col-md-6"><div class="cf-card text-center"><i class="bi bi-laptop"></i><h4>Postes informatiques</h4><p>Pour suivre les cours en ligne, concevoir et programmer.</p></div></div>
+        </div>
+        <!-- Gadus NIYONZIMA - Ajout : galerie photo des activités du fablab -->
+        <div class="row gy-4 mt-2 cf-gallery">
+          <div class="col-lg-3 col-6"><img src="assets/img/centre-formation/cf-fablab-montage.jpg" style="object-position: top;" alt="Montage d'un module électronique" loading="lazy"></div>
+          <div class="col-lg-3 col-6"><img src="assets/img/centre-formation/cf-fablab-soudure.jpg" alt="Soudure sur une carte électronique" loading="lazy"></div>
+          <div class="col-lg-3 col-6"><img src="assets/img/centre-formation/cf-fablab-maintenance.jpg" style="object-position: top;" alt="Maintenance d'un équipement électronique" loading="lazy"></div>
+          <div class="col-lg-3 col-6"><img src="assets/img/centre-formation/cf-fablab-programmation.jpg" alt="Programmation sur poste informatique" loading="lazy"></div>
         </div>
       </div>
     </section>
