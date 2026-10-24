@@ -5,11 +5,13 @@
 
 /* --- Palette : les couleurs sont definies une seule fois ici --- */
 :root {
-  --initel-bleu: #1d4fa3;        /* boutons, liens, icones (contraste 7,78:1 avec le blanc) */
+  /* Gadus NIYONZIMA - ancienne valeur conservee : --initel-bleu: #1d4fa3; */
+  --initel-bleu: #2a6ad0;        /* bleu plus lumineux, meme teinte que le logo (contraste 5,16:1) */
   --initel-nuit: #142a5b;        /* couleur du texte du logo, survols */
   --initel-bleu-clair: #8fb0e3;  /* soulignements, fonds au survol */
   --initel-texte: #1f2a3d;       /* texte courant */
-  --initel-fond-clair: #e8eef9;  /* fond des etiquettes */
+  /* Gadus NIYONZIMA - ancienne valeur conservee : --initel-fond-clair: #e8eef9; */
+  --initel-fond-clair: #eaf1fc;  /* fond des etiquettes, accorde au nouveau bleu */
   --initel-bordure: #e3e8f2;     /* bordure des cartes */
 }
 
