@@ -141,3 +141,34 @@ a { color: var(--initel-bleu); }
 .cf-cta { background: var(--initel-bleu); }
 
 /* Fin ajout Gadus NIYONZIMA */
+
+/* Gadus NIYONZIMA - Ajout : dernieres traces du vert du modele (survols, fonds et couleurs des icones) */
+a:hover { color: var(--initel-nuit); }
+.back-to-top:hover { background: var(--initel-nuit); }
+.featured .icon-box i { color: var(--initel-bleu); }
+.featured .icon-box:hover i { color: #fff; }
+.services .icon-box .icon::before { background: rgba(42, 106, 208, 0.15); }
+.why-us .icon-boxes .icon-box i { background: var(--initel-fond-clair); }
+.contact .info i { background: var(--initel-fond-clair); }
+.testimonials .testimonial-item .quote-icon-right { color: #c5d7f4; }
+.course-details .course-info a,
+.contact .info p { color: #5b6577; }
+/* Gris-vert du modele (#eef0ef) remplace par un gris-bleu */
+#footer { background: #eef2f8; }
+.why-us .icon-boxes .icon-box,
+.features .icon-box,
+.courses .course-item,
+.trainers .member,
+.testimonials .testimonial-item,
+.pricing .box { border-color: var(--initel-bordure); }
+.courses .trainer { border-top-color: var(--initel-bordure); }
+.course-details h3:before { background: var(--initel-bordure); }
+/* Bandeau newsletter : texte blanc et bouton bleu nuit, lisibles sur le fond bleu */
+#footer .footer-newsletter h4,
+#footer .footer-newsletter p { color: #fff; }
+#footer .footer-newsletter form input[type=submit] { background: var(--initel-nuit); }
+/* Le vert #18d26e du message "envoye" du formulaire est garde volontairement : c'est la couleur universelle du succes */
+
+/* Gadus NIYONZIMA - Ajout : signification d'INITELEMATIQUE dans le pied de page */
+#footer .signification { display: block; margin-top: 4px; font-size: 13px; color: var(--initel-texte); }
+/* Fin ajout Gadus NIYONZIMA */
