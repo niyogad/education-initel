@@ -172,3 +172,58 @@ a:hover { color: var(--initel-nuit); }
 /* Gadus NIYONZIMA - Ajout : signification d'INITELEMATIQUE dans le pied de page */
 #footer .signification { display: block; margin-top: 4px; font-size: 13px; color: var(--initel-texte); }
 /* Fin ajout Gadus NIYONZIMA */
+
+/* Gadus NIYONZIMA - Ajout : correspondance exacte vert -> bleu
+   Chaque vert du modele est remplace par le bleu de MEME luminosite et MEME saturation,
+   seule la teinte change (vert 140 degres -> bleu 217 degres, la teinte du logo).
+   Ce bloc est le dernier du fichier : il l'emporte sur les valeurs precedentes. */
+:root {
+  --initel-nuit: #1d4fa3;              /* survols fonces (ancien vert #3ac162) ; le logo garde #142a5b ci-dessous */
+  --initel-bleu-clair: #9ab5e1;        /* ancien vert #9ae1af */
+  --initel-bleu-survol-lien: #86a7db;  /* ancien vert #86db9f */
+  --initel-bleu-survol-bouton: #7ea0d8;/* ancien vert #7ed899 */
+  --initel-bleu-pale: #d3e3fd;         /* ancien vert #d3fddf */
+  --initel-fond-icone: #ecf1f9;        /* ancien vert #ecf9f0 */
+  --initel-fond-clair: #e8eef8;        /* ancien vert #e8f8ed */
+  --initel-bleu-citation: #c1d1ec;     /* ancien vert #c1ecce */
+  --initel-bleu-etiquette: #3a609c;    /* ancien vert #3a9c57 */
+  --initel-bordure: #e5e8ec;           /* ancien gris-vert #e5ece8 */
+  --initel-gris-bleu: #eeeff0;         /* ancien gris-vert #eef0ef */
+  --initel-texte-secondaire: #656d7a;  /* ancien gris-vert #657a6d */
+}
+#header .logo a { color: #142a5b; }    /* le nom garde la couleur exacte du logo */
+a:hover { color: var(--initel-bleu-survol-lien); }
+.back-to-top:hover { background: var(--initel-bleu-survol-bouton); }
+.featured .icon-box i,
+.featured .icon-box:hover i { color: var(--initel-bleu-pale); }
+.services .icon-box .icon::before { background: rgba(190, 213, 251, 0.33); }
+.why-us .icon-boxes .icon-box i,
+.contact .info i { background: var(--initel-fond-icone); }
+.testimonials .testimonial-item .quote-icon-right { color: var(--initel-bleu-citation); }
+.course-details .course-info a,
+.contact .info p { color: var(--initel-texte-secondaire); }
+#footer { background: var(--initel-gris-bleu); }
+.why-us .icon-boxes .icon-box,
+.features .icon-box,
+.courses .course-item,
+.trainers .member,
+.testimonials .testimonial-item,
+.pricing .box { border-color: var(--initel-gris-bleu); }
+.courses .trainer { border-top-color: var(--initel-gris-bleu); }
+.course-details h3:before { background: var(--initel-gris-bleu); }
+.cf-tag { color: var(--initel-bleu-etiquette); }
+/* Gris legerement verts du modele -> memes gris, legerement bleutes */
+#header { box-shadow: 0px 0 18px rgba(55, 59, 66, 0.08); }
+.navbar-mobile { background: rgba(32, 34, 38, 0.9); }
+.section-bg { background-color: #f6f6f7; }
+.course-details .course-info,
+.cf-alt { background: #f6f6f7; }
+.courses .trainer .trainer-profile span { color: #5a616c; }
+.courses .trainer .trainer-rank { color: var(--initel-texte-secondaire); }
+.trainers .member .social a { color: #7e8694; }
+.testimonials .testimonial-item .quote-icon-left { color: var(--initel-bleu-citation); }
+#footer .footer-top { background: #f9f9fa; }
+#footer .footer-newsletter form { border: 1px solid #e0e2e5; }
+.contact .php-email-form .loading:before { border: 3px solid var(--initel-bleu); border-top-color: #eee; }
+/* Seul vert garde volontairement : #18d26e, message "envoye" du formulaire (couleur de succes) */
+/* Fin ajout Gadus NIYONZIMA */
