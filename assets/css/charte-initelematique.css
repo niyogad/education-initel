@@ -1,0 +1,141 @@
+/* Gadus NIYONZIMA - Charte graphique INITELEMATIQUE (couleurs du logo officiel)
+   Fichier charge APRES style.css (et apres les styles de centre-formation.html) :
+   a precision egale, la derniere regle lue l'emporte. style.css reste intact.
+   Pour revenir au vert du modele : retirer la ligne <link> de ce fichier dans les pages. */
+
+/* --- Palette : les couleurs sont definies une seule fois ici --- */
+:root {
+  --initel-bleu: #1d4fa3;        /* boutons, liens, icones (contraste 7,78:1 avec le blanc) */
+  --initel-nuit: #142a5b;        /* couleur du texte du logo, survols */
+  --initel-bleu-clair: #8fb0e3;  /* soulignements, fonds au survol */
+  --initel-texte: #1f2a3d;       /* texte courant */
+  --initel-fond-clair: #e8eef9;  /* fond des etiquettes */
+  --initel-bordure: #e3e8f2;     /* bordure des cartes */
+}
+
+/* --- Logo : embleme + nom --- */
+#header .logo a { color: var(--initel-nuit); display: flex; align-items: center; gap: 12px; }
+#header .logo img.logo-embleme { max-height: 52px; }
+
+/* --- Correctif : le fichier s'appelle hero-bg5.JPG (majuscules), style.css appelle hero-bg5.jpg.
+   Windows ignore la casse, un serveur Linux non : le fond de l'accueil etait gris en ligne. --- */
+#hero { background-image: url("../img/hero-bg5.JPG"); }
+
+/* --- Couleurs du modele (style.css) --- */
+a { color: var(--initel-bleu); }
+.back-to-top { background: var(--initel-bleu); }
+#preloader:before { border: 6px solid var(--initel-bleu); }
+
+.get-started-btn { background: var(--initel-bleu); }
+.get-started-btn:hover { background: var(--initel-nuit); }
+.navbar a,
+.navbar a:focus { color: var(--initel-texte); }
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a { color: var(--initel-bleu); }
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a { color: var(--initel-bleu); }
+.mobile-nav-toggle { color: var(--initel-texte); }
+.navbar-mobile a,
+.navbar-mobile a:focus { color: var(--initel-texte); }
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a { color: var(--initel-bleu); }
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a { color: var(--initel-bleu); }
+#hero .btn-get-started:hover { background: var(--initel-bleu); border: 2px solid var(--initel-bleu); }
+.section-title h2::after { background: var(--initel-bleu-clair); }
+.section-title p { color: var(--initel-texte); }
+.breadcrumbs { background: var(--initel-bleu); }
+.featured .icon-box:hover { background: var(--initel-bleu-clair); }
+.services .icon-box .icon { background: var(--initel-bleu-clair); }
+.services .icon-box:hover { background: var(--initel-bleu-clair); border-color: var(--initel-bleu-clair); }
+.services .icon-box:hover .icon i { color: var(--initel-bleu-clair); }
+.pricing h4 { color: var(--initel-nuit); }
+.pricing ul i { color: var(--initel-nuit); }
+.pricing .buy-btn { background: var(--initel-nuit); }
+.pricing .buy-btn:hover { background: var(--initel-nuit); }
+.pricing .featured .buy-btn { background: var(--initel-nuit); }
+.pricing .featured .buy-btn:hover { background: var(--initel-nuit); }
+.about .content ul i { color: var(--initel-bleu); }
+.about .content .learn-more-btn { background: var(--initel-bleu); }
+.about .content .learn-more-btn:hover { background: var(--initel-nuit); }
+.counts .counters span { color: var(--initel-bleu); }
+.counts .counters p { color: var(--initel-texte); }
+.why-us .content { background: var(--initel-bleu); }
+.why-us .content .more-btn:hover { color: var(--initel-bleu); }
+.why-us .icon-boxes .icon-box i { color: var(--initel-bleu); }
+.features .icon-box h3 a { color: var(--initel-texte); }
+.features .icon-box:hover { border-color: var(--initel-bleu); }
+.features .icon-box:hover h3 a { color: var(--initel-bleu); }
+.courses .course-content h3 a { color: var(--initel-texte); }
+.courses .course-content h3 a:hover { color: var(--initel-bleu); }
+.courses .course-content h4 { background: var(--initel-bleu); }
+.courses .course-content .price { color: var(--initel-texte); }
+.trainers .member .social a:hover { color: var(--initel-bleu); }
+.testimonials .swiper-pagination .swiper-pagination-bullet { border: 1px solid var(--initel-bleu); }
+.testimonials .swiper-pagination .swiper-pagination-bullet-active { background-color: var(--initel-bleu); }
+.course-details h3:after { background: var(--initel-bleu); }
+.cource-details-tabs .nav-link { color: var(--initel-texte); }
+.cource-details-tabs .nav-link:hover { color: var(--initel-bleu); }
+.cource-details-tabs .nav-link.active { color: var(--initel-bleu); border-color: var(--initel-bleu); }
+.cource-details-tabs .details h3 { color: var(--initel-texte); }
+@media (max-width: 992px) {
+  .cource-details-tabs .nav-link.active { background: var(--initel-bleu); }
+}
+.events .card-title a { color: var(--initel-texte); }
+.events .read-more a:hover { color: var(--initel-bleu); }
+.events .card:hover .card-body { border-color: var(--initel-bleu); }
+.events .card:hover .card-body .card-title a { color: var(--initel-bleu); }
+.pricing h4 { color: var(--initel-bleu); }
+.pricing ul i { color: var(--initel-bleu); }
+.pricing .btn-buy { background: var(--initel-bleu); }
+.pricing .btn-buy:hover { background: var(--initel-nuit); }
+.pricing .featured h3 { background: var(--initel-bleu); }
+.pricing .advanced { background: var(--initel-bleu); }
+.contact .info i { color: var(--initel-bleu); }
+.contact .info h4 { color: var(--initel-texte); }
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i { background: var(--initel-bleu); }
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus { border-color: var(--initel-bleu); }
+.contact .php-email-form button[type=submit] { background: var(--initel-bleu); }
+.contact .php-email-form button[type=submit]:hover { background: var(--initel-nuit); }
+.blog .entry .entry-title a:hover { color: var(--initel-bleu); }
+.blog .entry .entry-content .read-more a { background: var(--initel-bleu); }
+.blog .entry .entry-content .read-more a:hover { background: var(--initel-bleu); }
+.blog .entry .entry-footer a:hover { color: var(--initel-bleu); }
+.blog .blog-comments .comment h5 a:hover { color: var(--initel-bleu); }
+.blog .blog-pagination li.active,
+.blog .blog-pagination li:hover { background: var(--initel-bleu); }
+.blog .sidebar .search-form form button { background: var(--initel-bleu); }
+.blog .sidebar .search-form form button:hover { background: var(--initel-bleu); }
+.blog .sidebar .categories ul a:hover { color: var(--initel-bleu); }
+.blog .sidebar .recent-posts h4 a:hover { color: var(--initel-bleu); }
+.blog .sidebar .tags ul a:hover { border: 1px solid var(--initel-bleu); background: var(--initel-bleu); }
+#footer { color: var(--initel-texte); }
+#footer .footer-top .footer-links ul i { color: var(--initel-bleu); }
+#footer .footer-top .footer-links ul a:hover { color: var(--initel-bleu); }
+#footer .footer-newsletter form input[type=submit] { background: var(--initel-bleu); }
+#footer .footer-newsletter form input[type=submit]:hover { background: var(--initel-nuit); }
+#footer .credits a { color: var(--initel-nuit); }
+#footer .credits a:hover { color: var(--initel-bleu); }
+#footer .social-links a { background: var(--initel-bleu); }
+#footer .social-links a:hover { background: var(--initel-nuit); }
+#footer .footer-newsletter { background: var(--initel-bleu); }
+#footer .footer-newsletter form input[type=submit] { background: var(--initel-bleu); }
+
+/* --- Page centre-formation (styles .cf-*) --- */
+.cf-hero .btn-cf { background: var(--initel-bleu); }
+.cf-card { border: 1px solid var(--initel-bordure); }
+.cf-card:hover { border-color: var(--initel-bleu); }
+.cf-card i { color: var(--initel-bleu); }
+.cf-tag { background: var(--initel-fond-clair); color: var(--initel-bleu); }
+.cf-step .num { background: var(--initel-bleu); }
+.cf-cta { background: var(--initel-bleu); }
+
+/* Fin ajout Gadus NIYONZIMA */
