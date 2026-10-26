@@ -1,0 +1,41 @@
+/* Gadus NIYONZIMA - Modele B "Bleu nuit premium"
+   Alternance de sections blanches et bleu nuit pour structurer la page.
+   Fichier charge APRES charte-initelematique.css : il ne touche ni style.css ni la charte.
+   Pour revenir au design precedent : retirer la ligne <link> de ce fichier dans les pages. */
+
+:root {
+  --b-fond-nuit: #0f2350;        /* fond des sections sombres (famille du bleu du logo) */
+  --b-carte-nuit: #16306a;       /* cartes posees sur les sections sombres */
+  --b-texte-clair: #c9d6ef;      /* texte courant sur fond sombre */
+  --b-etiquette-clair: #7ea0d8;  /* petits titres et chiffres sur fond sombre */
+  --b-fond-clair: #eef3fb;       /* sections claires alternees */
+  --b-pied: #0b1a3a;             /* pied de page */
+}
+
+/* --- Bandeaux photo : voile bleu nuit en degrade (haut clair, bas fonce) --- */
+#hero:before { background: linear-gradient(180deg, rgba(15,35,80,.35), rgba(15,35,80,.85)); }
+.cf-hero { background: linear-gradient(180deg, rgba(15,35,80,.55), rgba(15,35,80,.92)), url("../img/centre-formation/cf-hero.jpg") center 30%/cover no-repeat !important; }
+
+/* --- Sections sombres : accueil (chiffres, pourquoi nous) et centre de formation (modele, fablab) --- */
+#counts, #why-us, #fablab, #modele { background: var(--b-fond-nuit) !important; color: var(--b-texte-clair); }
+#counts .counters span { color: var(--b-etiquette-clair); }
+#counts .counters p, #why-us h4, #fablab h4, #modele h5, #modele h3 { color: #fff; }
+#why-us .content { background: linear-gradient(135deg, var(--initel-bleu), #1d4fa3); }
+#why-us .icon-boxes .icon-box { background: var(--b-carte-nuit); border: none; }
+#why-us .icon-boxes .icon-box p, #fablab p, #modele p { color: var(--b-texte-clair); }
+#modele .section-title h2, #fablab .section-title h2 { color: var(--b-etiquette-clair); }
+#modele .section-title p, #fablab .section-title p { color: #fff; }
+#modele strong { color: #fff; }
+#fablab .cf-card, #modele .cf-card { background: var(--b-carte-nuit); border: none; }
+#fablab .cf-card h4, #modele .cf-card h4, #modele .cf-card li { color: #fff; }
+
+/* --- Sections claires alternees --- */
+.cf-alt#filieres { background: var(--b-fond-clair); }
+
+/* --- Appel a l'action et pied de page --- */
+.cf-cta { background: linear-gradient(135deg, #142a5b, var(--initel-bleu)) !important; }
+#footer { background: var(--b-pied); }
+#footer .copyright, #footer .credits, #footer .signification { color: #9fb2d6; }
+#footer .copyright strong, #footer .credits a { color: #fff; }
+#footer .footer-newsletter { background: #142a5b; }
+/* Fin ajout Gadus NIYONZIMA */
